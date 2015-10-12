@@ -12,10 +12,6 @@ body {
 	background-color: #E9EAEE;
 }
 
-#header h1 {
-	padding-top: 3em;
-}
-
 h1, h2, h3 {
 	font-family: Raleway, "Helvetica Neue", Helvetica, sans-serif;
 }
@@ -82,13 +78,18 @@ nav a:hover, nav svg:hover {
 	text-decoration: none;
 }
 
-#motto, #cafe svg {
+#motto, #cafe .svg {
 	display: none;
 }
 
-#cafe, #info, #menu, #story {
+body > div {
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+}
+
+#header {
 	padding-top: 3em;
-	padding-bottom: 3em;
+	padding-bottom: 0;
 }
 
 #info {
@@ -138,6 +139,11 @@ dd {
 		font-size: 20px;
 	}
 	
+	body > div {
+	padding-top: 3em;
+	padding-bottom: 3em;
+}
+	
 	#header {
 		background-image: url("../img/background-sm.jpg");
 		background-size: cover;
@@ -149,7 +155,8 @@ dd {
 		color: white;
 	}
 	
-	h1 {
+	#header h1 {
+		padding-top: 3em;
 		color: white;
 	}
 	
