@@ -1,3 +1,12 @@
+/* Cole Chamberlin
+	 Info 343 A
+	 10/11/15
+	 HTML and CSS Concepts
+	 
+	 This page provides a responsive layout for mobile and desktop viewers for both the main page
+	 and the order page
+*/
+
 @import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,300);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic);
@@ -22,15 +31,18 @@ h2 {
 	margin-bottom: 1em;
 }
 
+/*brand icon to navigate to top of page */
 nav svg {
 	height: 1em;
 	width: 1em;
 }
 
+/* all other svgs in page */
 .svg {
 	padding: 1.5em;
 }
 
+/* all svgs that are headers of info section */
 #info svg {
 	fill: #D87E28;
 	height: 1.5em;
@@ -44,12 +56,14 @@ nav svg {
 	font-style: italic;
 }
 
+/* navbar */
 #nav {
 	background-color: #181C22;
 	display: table;
 	width: 100%;
 }
 
+/* list of elements in navbar */
 ul {
 	color: white;
 	font-size: 16px;
@@ -59,6 +73,7 @@ ul {
 	vertical-align: middle;
 }
 
+/* elements in list */
 li {
 	display: inline-block;
 	vertical-align: middle;
@@ -66,6 +81,11 @@ li {
 	font-variant: small-caps;
 }
 
+dd {
+	padding-left: 1em;
+}
+
+/* color scheme of links in navbar */
 nav a, nav svg {
 	fill: white;
 	color: white;
@@ -78,10 +98,12 @@ nav a:hover, nav svg:hover {
 	text-decoration: none;
 }
 
-#motto, #cafe .svg {
+/* hide motto and brand icon for mobile */
+#motto, #cafe svg {
 	display: none;
 }
 
+/* padding to seperate sections of page */
 body > div {
 	padding-top: 1.5em;
 	padding-bottom: 1.5em;
@@ -92,11 +114,7 @@ body > div {
 	padding-bottom: 0;
 }
 
-#info {
-	background-color: #dbdce3;
-}
-
-#story {
+#info, #story {
 	background-color: #dbdce3;
 }
 
@@ -118,14 +136,10 @@ body > div {
 	clear: both;
 }
 
-dd {
-	padding-left: 1em;
-}
-
 .soon {
 	font-size: 1.5em;
-	margin-top: 1em;
-	margin-bottom: 1em;
+	padding-top: 1em;
+	padding-bottom: 1em;
 }
 
 #footer > div {
@@ -135,15 +149,27 @@ dd {
 /* 768px - 991px */
 
 @media (min-width: 768px) {
+	/* larger font size for bigger screens */
 	body {
 		font-size: 20px;
 	}
 	
 	body > div {
-	padding-top: 3em;
-	padding-bottom: 3em;
-}
+		padding-top: 3em;
+		padding-bottom: 3em;
+	}
 	
+	/* nav bar becomes more spaced out and transparent on larger screens for artwork to show through */
+	#nav {
+		background-color: rgba(24, 28, 34, 0.8);
+	}
+	
+	li {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+	
+	/* image is displayed for small medium and large screens */
 	#header {
 		background-image: url("../img/background-sm.jpg");
 		background-size: cover;
@@ -155,32 +181,10 @@ dd {
 		color: white;
 	}
 	
+	/* color switches to white for better contrast against image */
 	#header h1 {
 		padding-top: 3em;
 		color: white;
-	}
-	
-	#cafe svg {
-		display: initial;
-		height: 1.5em;
-		fill: #D87E28;
-	}
-	
-	#motto, #brand {
-		display: initial;
-	}
-	
-	#brand {
-		height: 3em;
-		padding-bottom: 1em;
-		color: brown;
-	}
-	
-	#cafe {
-		font-size: 1.25em;
-		padding-top: 3em;
-		padding-bottom: 3em;
-		text-align: center;
 	}
 	
 	h2 {
@@ -189,19 +193,31 @@ dd {
 		margin-bottom: 1em;
 	}
 	
-	#nav {
-		background-color: rgba(24, 28, 34, 0.8);
+	/* display brand icon for larger screens */
+	#cafe svg {
+		display: initial;
+		height: 1.5em;
+		fill: #D87E28;
 	}
 	
-	li {
-		padding-left: 1em;
-		padding-right: 1em;
+	/* display motto for larger screens */
+	#motto {
+		display: initial;
 	}
 	
+	#cafe {
+		font-size: 1.25em;
+		padding-top: 0;
+		padding-bottom: 3em;
+		text-align: center;
+	}
+	
+	/* increases max size of image for larger screens */
 	#storyimg {
 		max-height: 400px;
 	}
 	
+	/* adjusts footer layout for single-line view on larger screens */
 	#footer > div > div:nth-child(2) {
 		text-align: right;
 	}
