@@ -3,17 +3,18 @@
 This folder contains your submission for the [responsive challenge](http://faculty.washington.edu/mikefree/info343/#/challenges/responsive). The below questions should be answered with details about your submission!
 
 ##### 1. What is the URL of this site, as hosted on your student webserver (i.e., students.washington.edu/<code>{uw-new-id}</code>/info343/<code>{project-name}</code>) #####
-> Answer goes here!
+> students.washington.edu/jessec18/info343/dawg-coffee/
 
 ##### 2. Did you receive any help from others (classmates, etc)? If so, please list who. #####
-> Answer goes here!
+> Just some w3cschools pages and stackoverflow answers
 
 ##### 3. Did you complete any advanced extensions to this challenge? If so, what? #####
-> Answer goes here!
+> No
 
 ##### 4. Approximately how many hours did it take you to complete this challenge? #####
-> Answer goes here!
+> 10
 
 ##### 5. Did you encounter any problems in this challenge we should warn students about in the future? How can we make the challenge better? #####
-> Answer goes here!
+> It took me a while to figure out some of the formatting with css, but that could have been avoided by me following the instructions more clearly.
+I'll have to get used to sourcing solutions to my problems on my own through third party resources.
 

@@ -1,1 +1,218 @@
-/* Your stylesheet goes here */
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
+/* 0px - 767px */
+
+body {
+	font-family: Lato, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	background-color: #E9EAEE;
+}
+
+#header h1 {
+	padding-top: 3em;
+}
+
+h1, h2, h3 {
+	font-family: Raleway, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+h2 {
+	color: #BC6026;
+	margin: auto;
+	margin-bottom: 1em;
+}
+
+nav svg {
+	height: 1em;
+	width: 1em;
+}
+
+.svg {
+	padding: 1.5em;
+}
+
+#info svg {
+	fill: #D87E28;
+	height: 1.5em;
+	width: 1.5em;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.italic {
+	font-style: italic;
+}
+
+#nav {
+	background-color: #181C22;
+}
+
+ul {
+	color: white;
+	font-size: 16px;
+	padding-left: 15px;
+	margin: 0;
+}
+
+li {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0.5em;
+	font-variant: small-caps;
+}
+
+nav a, nav svg {
+	fill: white;
+	color: white;
+	text-decoration: none;
+}
+
+nav a:hover, nav svg:hover {
+	fill: #D87E28;
+	color: #D87E28;
+	text-decoration: none;
+}
+
+#motto, #cafe svg {
+	display: none;
+}
+
+#cafe, #info, #menu, #story {
+	padding-top: 3em;
+	padding-bottom: 3em;
+}
+
+#info {
+	background-color: #dbdce3;
+}
+
+#story {
+	background-color: #dbdce3;
+}
+
+.rounded {
+	border-radius: 5px;
+}
+
+#storyimg {
+	float: right;
+	max-height: 300px;
+	margin-left: 1em;
+}
+
+#footer {
+	border-top: 3px solid #d87e28;
+	background-color: #afb3c2;
+	font-size: 12px;
+	padding: 1em;
+	clear: both;
+}
+
+dd {
+	padding-left: 1em;
+}
+
+.soon {
+	font-size: 1.5em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+#footer > div {
+	text-align: left;
+}
+
+/* 768px - 991px */
+
+@media (min-width: 768px) {
+	body {
+		font-size: 20px;
+	}
+	
+	#header {
+		background-image: url("../img/background-sm.jpg");
+		background-size: cover;
+		text-align: right;
+		background-repeat: no-repeat;
+		min-height: 550px;
+		margin: 0;
+		padding: 0;
+		color: white;
+	}
+	
+	h1 {
+		color: white;
+	}
+	
+	#cafe svg {
+		display: initial;
+		height: 1.5em;
+		fill: #D87E28;
+	}
+	
+	#motto, #brand {
+		display: initial;
+	}
+	
+	#brand {
+		height: 3em;
+		padding-bottom: 1em;
+		color: brown;
+	}
+	
+	#cafe {
+		font-size: 1.25em;
+		padding-top: 3em;
+		padding-bottom: 3em;
+		text-align: center;
+	}
+	
+	h2 {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 1em;
+	}
+	
+	#nav {
+		background-color: rgba(24, 28, 34, 0.8);
+	}
+	
+	li {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+	
+	#storyimg {
+		max-height: 400px;
+	}
+	
+	#footer > div > div:nth-child(2) {
+		text-align: right;
+	}
+}
+
+/* 992px - 1199 */
+
+@media (min-width: 992px) {
+	#header {
+		background-image: url("../img/background-md.jpg");
+	}
+	h1 {
+		font-size: 4em;
+	}
+}
+
+/* 1200px - */
+
+@media (min-width: 1200) {
+	#header {
+		background-image: url("../img/background-lg.jpg"); 
+	}
+}
+
+
